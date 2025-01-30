@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My To Do List</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="assets/web.png">
+    </head>
+    <body>
+        <div id="to-do-container">
+            <div id="header">
+                <img src="assets/to-do.png" alt="web-icon" class="header-icon">
+                <h1>My To Do List</h1>
+            </div>
+            <div id="todo-form">
+                <input type="text" class="input-item" name="input-box" id="todo-input" placeholder="Enter your task here">
+                <button id="todo-button" onclick="addTask()">Add Task</button>
+            </div>
+            <h2>Task List</h2>
+            <ul id="list-container">
+            </ul>
+
+            <hr/>
+            <div class="counter-box"> 
+                <div id="task-containers">
+                    <div class="task-box">Completed : <span id="completed-counter">0</span></div>
+                    <br>
+                    <div class="task-box">Uncompleted : <span id="uncompleted-counter">0</span></div>
+                    <button id="delete-all">Delete All</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <footer id="footer">
+            <p>© 2025 My To Do List. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
